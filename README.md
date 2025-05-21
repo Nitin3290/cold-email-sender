@@ -41,11 +41,7 @@ pip install -r requirements.txt
 
 ---
 
-### 🔐 Step 2: Create and Fill `.env` File
-
-```bash
-cp .env.example .env
-```
+### 🔐 Step 2: Open and Fill `.env` File
 
 Then, open `.env` and fill in your personal details:
 
