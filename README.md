@@ -20,7 +20,10 @@ This tool automates the entire process:
 ## 📋 What You Need
 
 1. A Gmail account with **2-Step Verification (2FA)** turned on
-2. A **Gmail App Password** (used securely instead of your actual password)
+2. A **Gmail App Password** (used securely NOT YOUR ACTUAL PASSWORD)
+   • After turning on 2FA, go to: https://myaccount.google.com/apppasswords
+   • Select “Mail” as the app and “Other” (or “Custom”) as the device
+   • Generate the password and copy it safely – you’ll use this instead of your actual Gmail password
 3. A resume file (PDF)
 4. A list of recruiters (in `.csv` format)
 
@@ -78,19 +81,17 @@ John Smith,john.smith@example.com,Google
 
 ---
 
-### 📤 Step 4: Run the Script
-
-Now just run:
+### 🚀 Step 4: Run the Script
 
 ```bash
 python main.py
 ```
 
-Each recruiter will receive:
+You’ll see a cool welcome screen with your name, and each recruiter will receive:
 
 - A **personalized message** with their name + company
 - Your **resume attached**
-- A **clean, respectful tone** that's optimized for cold outreach
+- A **clean, respectful tone** optimized for cold outreach
 
 ---
 
@@ -116,34 +117,40 @@ Nitin
 
 ## 💡 Tips for Effective Cold Emailing
 
-- ✔ Always **double-check email addresses**
-- ✔ Send in small batches (10–20) to avoid spam flagging
-- ✔ Be **respectful and concise**
-- ✔ Keep your subject line polite but noticeable
-- ✔ Don’t ask for a job — ask to be considered or remembered
+- ✅ Double-check email addresses
+- ✅ Send in small batches (10–20 per run)
+- ✅ Be respectful and concise
+- ✅ Don’t demand — just express interest
+- ✅ Avoid spammy phrases or ALL CAPS subjects
 
 ---
 
-## 🛠 Customize the Email Content
+## 🛠 Customizing the Email
 
-Edit the `generate_email.py` file to:
+Edit `generate_email.py` if you:
 
-- Change tone (more formal or more casual)
+- Want to change tone (formal, casual)
 - Add/remove signature lines
-- Add extra fields (like GitHub or phone)
+- Include more fields (GitHub, phone, etc.)
 
 ---
 
-## ⚙️ Advanced Users
+## ⚙️ For Advanced Users
 
-- Want to use Outlook/Zoho instead of Gmail? Modify `send_email.py`
-- Want rich HTML emails? Use `MIMEText(body, 'html')` instead of `'plain'`
+- Want to use Outlook/Zoho instead of Gmail? → Tweak `send_email.py`
+- Prefer fancy HTML emails? → Replace `MIMEText(body, 'plain')` with `'html'`
+
+---
+
+## 👨‍💻 Fun Touch (Startup Style Banner)
+
+When you run the script, it prints your name (from `.env`) in a big banner using `pyfiglet` for fun 😎
 
 ---
 
 ## 📄 License & Credits
 
-This tool is free and open-source.  
-Created with ❤️ by [Nitin](https://github.com/Nitin3290)
+This tool is **free and open-source**.  
+Built with ❤️ by [Nitin](https://github.com/Nitin3290)
 
-> Please use responsibly — cold emailing is a privilege, not a spam tool.
+> Use responsibly – cold emailing is a privilege, not a spam weapon.
